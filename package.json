@@ -2,15 +2,26 @@
   "name": "wetube-clone",
   "version": "1.0.0",
   "description": "wetube clone challenge graduation assignment",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CD-JIN/wetube-clone.git"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js"
   },
   "author": "CD-JIN<cdjin01@naver.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CD-JIN/wetube-clone/issues"
   },
-  "homepage": "https://github.com/CD-JIN/wetube-clone#readme"
+  "homepage": "https://github.com/CD-JIN/wetube-clone#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  }
 }
