@@ -1,7 +1,7 @@
 ### Graduation Assignment
 
-This project is wetube clone.
-I build this project using NodeJS, Express, Mongo, Pug and ES6.
+- This project is wetube clone.
+- I build this project using NodeJS, Express, Mongo, Pug and ES6.
 
 ### 프로젝트 느낀점
 - 유튜브 클론 프로젝트를 하면서 여러 기능들을 배우고 연습하는 과정에서 나타난 웹으로 유저가 사용함에 완벽하지 않음을 알려드림.
