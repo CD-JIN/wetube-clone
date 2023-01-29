@@ -68,7 +68,9 @@ export const startKakaoLogin = (req, res) => {
   const config = {
     response_type: "code",
     client_id: process.env.KAKAO_CLIENT,
-    redirect_uri: process.env.KAKAO_REDIRECTURI,
+    redirect_uri:
+      "https://wetube-clone.herokuapp.com" + process.env.KAKAO_REDIRECTURI ||
+      "http://localhost:" + process.env.PORT + process.env.KAKAO_REDIRECTURI,
   };
   const params = new URLSearchParams(config).toString();
   const finalUrl = `${baseUrl}?${params}`;
