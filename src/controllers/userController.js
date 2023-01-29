@@ -80,7 +80,8 @@ export const finishKakaoLogin = async (req, res) => {
   const config = {
     grant_type: "authorization_code",
     client_id: process.env.KAKAO_CLIENT,
-    redirect_uri: process.env.KAKAO_REDIRECTURI,
+    redirect_uri:
+      "http://localhost:" + process.env.PORT + process.env.KAKAO_REDIRECTURI,
     code: req.query.code,
   };
   const params = new URLSearchParams(config).toString();
