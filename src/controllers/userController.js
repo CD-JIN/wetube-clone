@@ -81,6 +81,7 @@ export const finishKakaoLogin = async (req, res) => {
     grant_type: "authorization_code",
     client_id: process.env.KAKAO_CLIENT,
     redirect_uri:
+      "https://wetube-clone.herokuapp.com" + process.env.KAKAO_REDIRECTURI ||
       "http://localhost:" + process.env.PORT + process.env.KAKAO_REDIRECTURI,
     code: req.query.code,
   };
